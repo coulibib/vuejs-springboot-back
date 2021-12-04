@@ -40,10 +40,16 @@ public class SpringbootBackendApplication implements CommandLineRunner {
 				.lastName("Forgeot")
 				.email("awa@gmail.com")
 				.build();
+		Employee employee5 = Employee.builder()
+				.firstName("Bintu")
+				.lastName("Camara")
+				.email("bintu@gmail.com")
+				.build();
 		employeeRepository.save(employee1);
 		employeeRepository.save(employee2);
 		employeeRepository.save(employee3);
 		employeeRepository.save(employee4);
+		employeeRepository.save(employee5);
 
 	}
 }
